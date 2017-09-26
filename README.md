@@ -1,6 +1,6 @@
 
 # The www.northbricks.com website
-[![Build Status](https://travis-ci.org/Northbricks/www.northbricks.com.svg)](https://travis-ci.org/Northbricks/www.northbricks.com)
+[![Build Status](https://travis-ci.org/NorthBricks/www.northbricks.com.svg)](https://travis-ci.org/NorthBricks/www.northbricks.com)
 [![Dependency Status](https://img.shields.io/david/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com)
 [![peerDependency Status](https://img.shields.io/david/peer/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=peer)
 [![devDependency Status](https://img.shields.io/david/dev/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=dev)
