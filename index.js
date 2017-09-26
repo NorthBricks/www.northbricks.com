@@ -4,6 +4,7 @@ var layouts      = require('metalsmith-layouts');
 var permalinks   = require('metalsmith-permalinks');
 var htmlMinifier = require('metalsmith-html-minifier');
 var uglify       = require('metalsmith-uglify');
+var sass         = require('metalsmith-sass');
 
 Metalsmith(__dirname)
   .metadata({
@@ -20,6 +21,7 @@ Metalsmith(__dirname)
   .use(uglify({
     removeOriginal: true
   }))
+  .use(sass())
   .build(function(err, files) {
     if (err) { throw err; }
   });

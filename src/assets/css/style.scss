@@ -36,40 +36,37 @@ h4 {
 /* Header */
 header {
     background: url(../images/hero-bg.jpg);
-/*    background-attachment: fixed;*/
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
     padding-bottom: 60px;
+    h1 {
+        color: #fff;
+    }
+    .section-description {
+        text-align: center;
+        line-height:26px;
+        margin-bottom:60px;
+        font-size:16px;
+        color:#fff;
+        font-family:Lato;
+        font-weight:400
+    }
 }
 
-header h1 {
-    color: #fff;
-}
-
-header .section-description {
-    text-align: center;
-    line-height:26px;
-    margin-bottom:60px;
-    font-size:16px;
-    color:#fff;
-    font-family:Lato;
-    font-weight:400
-}
-
-.navbar-dark .navbar-text {
-    color: #fff;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    background-color: rgba(255,255,255,.2);
-    padding-left: 10px;
-}
-
-.navbar-dark .nav-item.active .nav-link,
-.navbar-dark .nav-item:hover .nav-link {
-    color: #fff;
+.navbar-dark {
+    .navbar-text {
+        color: #fff;
+    }
+    .navbar-nav .nav-link {
+        color: #fff;
+        background-color: rgba(255,255,255,.2);
+        padding-left: 10px;
+    }
+    .nav-item.active .nav-link,
+    .nav-item:hover .nav-link {
+        color: #fff;
+    }
 }
 
 /* Sections */
@@ -85,16 +82,15 @@ section {
     padding-bottom: 80px;
     padding-bottom: 90px;
     position: relative;
+    .post {
+        background-color: #fff;
+        margin: 20px 0;
+    }
+    .post-title {
+        margin-top: 35px;
+    }
 }
 
-#blog .post {
-    background-color: #fff;
-    margin: 20px 0;
-}
-
-.post-title {
-    margin-top: 35px;
-}
 
 /* Team section */
 #team {
@@ -119,10 +115,9 @@ section {
 footer {
     background-color: #464646;
     padding: 20px 0;
-}
-
-footer a, footer a:hover {
-    color: #fff;
+    a, a:hover {
+        color: #fff;
+    }
 }
 
 .social-links {
@@ -137,11 +132,6 @@ footer a, footer a:hover {
 }
 
 /* TODO */
-
-.header-right {
-    display: none;
-}
-
 .navbar-item {
     color: #ffffff;
     padding: 10px;
