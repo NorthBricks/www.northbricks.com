@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{title}}</title>
+    <meta name="Nova theme" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/responsive.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-toggleable-md navbar-dark">
+            <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png"/></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="containerNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">{{about.title}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">{{blog.title}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">{{team.title}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">{{contact.title}}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="header-headline bold">{{hero.title}}</h1>
+        <div class="section-description">{{hero.text}}</div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>{{about.title}}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-10 ml-auto mr-auto">{{about.text}}</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <h2>{{blog.title}}</h2>
+            <p>{{blog.text}}</p>
+            <div class="blog-container row">
+                {{#each blog.posts}}
+                <div class="post col-md-4 ml-auto mr-auto">
+                    {{#if this.pic}}
+                    <img class="post-image" src="{{this.pic}}"/>
+                    {{/if}}
+                    <h4 class="post-title light">{{this.title}}</h4>
+                    <div class="post-entry">{{this.entry}}</div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>{{team.title}}</h2>
+            <div class="team-container row">
+                {{#each team.people}}
+                <div class="col-md-4 team-member ml-auto mr-auto">
+                    <img class="team-member-pic" src="{{this.pic}}"/>
+                    <div class="team-member-text">
+                        <h4 class="light">{{this.title}}</h4>
+                        <h5 class="bold">{{this.name}}</h5>
+                        <p class="light">{{this.desc}}</p>
+                        <a href="{{this.twitter}}"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
+                        <a href="{{this.linkedin}}"><img class="team-social-icon" src="assets/images/team-linkedin.svg"></a>
+                        <a href="{{this.github}}"><img class="team-social-icon" src="assets/images/team-github.svg"></a>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <address class="row">
+                <div class="col-md-4 col-sm-12 webscope ml-auto">
+                    <a href="mailto:{{contact.email}}">{{contact.email}}</a>
+                </div>
+                <div class="col-md-4 col-sm-12 social-links">
+                    <a href="{{contact.twitter}}"><img class="social-link" src="assets/images/twitter.svg"/></a>
+                    <a href="{{contact.facebook}}"><img class="social-link" src="assets/images/facebook.svg"/></a>
+                    <a href="{{contact.linkedin}}"><img class="social-link" src="assets/images/linkedin.svg"/></a>
+                    <a href="{{contact.github}}"><img class="social-link" src="assets/images/github.svg"/></a>
+                </div>
+            </address>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

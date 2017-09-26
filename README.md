@@ -1,9 +1,9 @@
 
 # The www.northbricks.com website
-[![Build Status](https://travis-ci.org/FlaxHaxx/metalsmith-test.svg)](https://travis-ci.org/FlaxHaxx/metalsmith-test)
-[![Dependency Status](https://img.shields.io/david/flaxhaxx/metalsmith-test.svg?style=flat-square)](https://david-dm.org/flaxhaxx/metalsmith-test)
-[![peerDependency Status](https://img.shields.io/david/peer/flaxhaxx/metalsmith-test.svg?style=flat-square)](https://david-dm.org/flaxhaxx/metalsmith-test?type=peer)
-[![devDependency Status](https://img.shields.io/david/dev/flaxhaxx/metalsmith-test.svg?style=flat-square)](https://david-dm.org/flaxhaxx/metalsmith-test?type=dev)
+[![Build Status](https://travis-ci.org/Northbricks/www.northbricks.com.svg)](https://travis-ci.org/Northbricks/www.northbricks.com)
+[![Dependency Status](https://img.shields.io/david/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com)
+[![peerDependency Status](https://img.shields.io/david/peer/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=peer)
+[![devDependency Status](https://img.shields.io/david/dev/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=dev)
 
 The Northbricks.com website. Changes in master branch will trigger e new deployment to gh-pages branch which is the website at http://www.northbricks.com.
 
