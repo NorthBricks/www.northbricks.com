@@ -1,8 +1,9 @@
 var Metalsmith   = require('metalsmith');
-var htmlMinifier = require('metalsmith-html-minifier');
 var markdown     = require('metalsmith-markdown');
 var layouts      = require('metalsmith-layouts');
 var permalinks   = require('metalsmith-permalinks');
+var htmlMinifier = require('metalsmith-html-minifier');
+var uglify       = require('metalsmith-uglify');
 
 Metalsmith(__dirname)
   .metadata({
@@ -16,6 +17,9 @@ Metalsmith(__dirname)
     engine: 'handlebars'
   }))
   .use(htmlMinifier())
+  .use(uglify({
+    removeOriginal: true
+  }))
   .build(function(err, files) {
     if (err) { throw err; }
   });
