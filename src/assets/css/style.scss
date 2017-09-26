@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     line-height: 54px;
     font-size: 50px;
+    padding-bottom: 50px;
 }
 
 h2 {
@@ -36,21 +37,25 @@ h4 {
 /* Header */
 header {
     background: url(../images/hero-bg-xs.jpg);
-    background-position:center;
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: 80% -10%;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-bottom: 60px;
     h1 {
-        color: #fff;
-    }
-    .section-description {
         text-align: center;
-        line-height:26px;
-        margin-bottom:60px;
-        font-size:16px;
-        color:#fff;
-        font-family:Lato;
-        font-weight:400
+        color: #fff;
+        margin-top: 100px;
+    }
+    .hero-text {
+        text-align: center;
+        line-height: 26px;
+        margin-top: 25px;
+        margin-bottom: 60px;
+        font-size: 20px;
+        color: #fff;
+        font-family: Lato;
+        font-weight: 400
     }
 }
 
@@ -60,6 +65,7 @@ header {
     }
     .navbar-nav .nav-link {
         color: #fff;
+        font-size: 18px;
         background-color: rgba(255,255,255,.2);
         padding-left: 10px;
     }
@@ -88,6 +94,9 @@ section {
     }
     .post-title {
         margin-top: 35px;
+    }
+    .post-entry {
+        margin: 40px 0 55px;
     }
 }
 
