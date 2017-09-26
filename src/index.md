@@ -36,15 +36,15 @@ team:
       title: CEO
       desc: My goal has always been to open up banks data to everyone. Banking has been a closed business and i really wanna open up pandoras box. If you are a third-party and have a great idea and wanna connect to all banks in Europe thru one api - contact me.
       pic: assets/images/team/tobias-larsson.jpg
-      linkedin:
-      twitter:
-      github:
+      linkedin: https://www.linkedin.com/in/mrweiland/
+      twitter: https://twitter.com/mrweiland
+      github: https://github.com/mrweiland
 
 contact:
   title: Contact
   email: info@northbricks.com
   facebook: https://www.facebook.com/NorthBricks
-  github: https://www.github.com/NorthBricks
+  github: https://www.github.com/Northbricks
   linkedin: https://www.linkedin.com/company-beta/22339599
   twitter: https://twitter.com/northbricks
 ---
