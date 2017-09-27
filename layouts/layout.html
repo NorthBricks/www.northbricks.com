@@ -68,12 +68,14 @@
             <p>{{blog.text}}</p>
             <div class="blog-container row">
                 {{#each blog.posts}}
-                <div class="post col-md-4 ml-auto mr-auto">
-                    {{#if this.pic}}
-                    <img class="post-image" src="{{this.pic}}"/>
-                    {{/if}}
-                    <h4 class="post-title light">{{this.title}}</h4>
-                    <div class="post-entry">{{this.entry}}</div>
+                <div class="col-md-4 ml-auto mr-auto">
+                    <div class="post">
+                        {{#if this.pic}}
+                        <img class="post-image" src="{{this.pic}}"/>
+                        {{/if}}
+                        <h4 class="post-title light">{{this.title}}</h4>
+                        <div class="post-entry">{{this.entry}}</div>
+                    </div>
                 </div>
                 {{/each}}
             </div>

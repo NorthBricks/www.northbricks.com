@@ -92,11 +92,15 @@ section {
         background-color: #fff;
         margin: 20px 0;
     }
+    .post-image {
+        height: 200px;
+        width: 100%;
+    }
     .post-title {
-        margin-top: 35px;
+        margin: 35px 20px 40px 20px;
     }
     .post-entry {
-        margin: 40px 0 55px;
+        padding: 0 20px 50px;
     }
 }
 
