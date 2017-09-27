@@ -14,11 +14,11 @@ blog:
   text:
   posts:
     - date: 2017-09-24
-      pic:
+      pic: assets/images/blog/psd2.png
       title: Agreements to first bank
       entry: Banks today are preparing PSD2 agreements for third-party vendors. Soon we have first real agreement with a bank in Sweden to start test Northbricks platform and more to come.
     - date: 2017-08-26
-      pic:
+      pic: assets/images/blog/stockholm-fintech-hub.png
       title: Presentation for Nordea Wealth Management
       entry: Northbricks were invited to present what we are doing for Nordea Wealth Management on Stockholm Fintech Hub. Nordea with their Open Banking approach is the way to go and we look forward to connecting Nordea to Northbricks. When we connect Nordea 11 million customers to Northbricks this will be a huge incent for third-party to be able to create great innovations on Nordea customers data. Thanks Nordea for doing the right thing - open up your banks data.
 
