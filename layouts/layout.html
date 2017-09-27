@@ -12,34 +12,38 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png"/></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="containerNavbar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">{{about.title}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">{{blog.title}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#team">{{team.title}}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">{{contact.title}}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>{{hero.title}}</h1>
-                    <div class="hero-text">{{hero.text}}</div>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png"/></a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="containerNavbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about">{{about.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#blog">{{blog.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#team">{{team.title}}</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">{{contact.title}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>{{hero.title}}</h1>
+                        <div class="hero-text">{{hero.text}}</div>
+                    </div>
                 </div>
             </div>
         </div>
