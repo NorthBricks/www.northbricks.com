@@ -128,6 +128,15 @@
 /* Medium Devices, Desktops */
 
 @media only screen and (min-width: 992px) {
+    header .navbar-nav  {
+        margin-left: 60px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        background: transparent;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /* Large Devices, Wide Screens */
