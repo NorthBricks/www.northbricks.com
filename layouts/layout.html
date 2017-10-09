@@ -81,13 +81,13 @@
             <div class="blog-container row">
                 {{#each blog.posts}}
                 <div class="col-md-4 ml-auto mr-auto">
-                    <div class="post">
+                    <article class="post">
                         {{#if this.pic}}
                         <img class="post-image" src="{{this.pic}}"/>
                         {{/if}}
                         <h4 class="post-title light">{{this.title}}</h4>
                         <div class="post-entry">{{this.entry}}</div>
-                    </div>
+                    </article>
                 </div>
                 {{/each}}
             </div>
