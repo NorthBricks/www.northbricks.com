@@ -55,7 +55,17 @@ header {
         font-size: 20px;
         color: #fff;
         font-family: Lato;
-        font-weight: 400
+        font-weight: 300
+    }
+    .hero-goToLink {
+        text-align: center;
+        line-height: 26px;
+        margin-top: 25px;
+        margin-bottom: 60px;
+        font-size: 20px;
+        color: #fff;
+        font-family: Lato;
+        font-weight: 500
     }
 }
 
@@ -83,16 +93,16 @@ section {
 
 /* Blog section */
 #blog {
-    background-color: #222f36;
+    background-color: #fff;
     padding-top: 40px;
-    padding-bottom: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
     position: relative;
     .post {
         background-color: #fff;
         margin: 20px 0;
     }
     .post-image {
+        object-fit: contain;
         height: 200px;
         width: 100%;
     }
@@ -102,6 +112,9 @@ section {
     .post-entry {
         padding: 0 20px 50px;
         text-align: left;
+    }
+    .post-link {
+        text-decoration:underline;
     }
 }
 

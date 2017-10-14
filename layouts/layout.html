@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{title}}</title>
     <meta name="Nova theme" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700" />
-    <link rel="stylesheet" href="assets/css/style.css"/>
-    <link rel="stylesheet" href="assets/css/responsive.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107218320-1"></script>
@@ -22,14 +24,18 @@
         gtag('config', 'UA-107218320-1');
     </script>
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <nav class="navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-brand" href="#"><img class="logo" src="assets/images/logo.png"/></a>
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand" href="#">
+                            <img class="logo" src="assets/images/logo.png" />
+                        </a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar"
+                            aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -55,7 +61,13 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>{{hero.title}}</h1>
-                    <div class="hero-text">{{hero.text}}</div>
+                    <div class="hero-text">
+                        <i>{{hero.text}}</i>
+                        <br>
+                        <br>
+                        <a class="hero-goToLink" href="{{hero.goToLink}}" target="_blank">{{hero.goToLinkText}}</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -83,10 +95,18 @@
                 <div class="col-md-4 ml-auto mr-auto">
                     <article class="post">
                         {{#if this.pic}}
-                        <img class="post-image" src="{{this.pic}}"/>
-                        {{/if}}
+                        <img class="post-image" src="{{this.pic}}" /> {{/if}}
                         <h4 class="post-title light">{{this.title}}</h4>
                         <div class="post-entry">{{this.entry}}</div>
+                        {{#if this.linkUrl}}
+                        <div class="post-link">
+                            <a href="{{this.linkUrl}}" target="_blank">{{this.linkText}}</a>
+                        </div>
+                        {{/if}} {{#if this.linkUrl2}}
+                        <div class="post-link">
+                            <a href="{{this.linkUrl2}}" target="_blank">{{this.linkText2}}</a>
+                        </div>
+                        {{/if}}
                     </article>
                 </div>
                 {{/each}}
@@ -100,14 +120,20 @@
             <div class="team-container row">
                 {{#each team.people}}
                 <div class="col-md-4 team-member ml-auto mr-auto">
-                    <img class="team-member-pic" src="{{this.pic}}"/>
+                    <img class="team-member-pic" src="{{this.pic}}" />
                     <div class="team-member-text">
                         <h4 class="light">{{this.title}}</h4>
                         <h5 class="bold">{{this.name}}</h5>
                         <p class="light">{{this.desc}}</p>
-                        <a href="{{this.twitter}}"><img class="team-social-icon" src="assets/images/team-twitter.svg"></a>
-                        <a href="{{this.linkedin}}"><img class="team-social-icon" src="assets/images/team-linkedin.svg"></a>
-                        <a href="{{this.github}}"><img class="team-social-icon" src="assets/images/team-github.svg"></a>
+                        <a href="{{this.twitter}}">
+                            <img class="team-social-icon" src="assets/images/team-twitter.svg">
+                        </a>
+                        <a href="{{this.linkedin}}">
+                            <img class="team-social-icon" src="assets/images/team-linkedin.svg">
+                        </a>
+                        <a href="{{this.github}}">
+                            <img class="team-social-icon" src="assets/images/team-github.svg">
+                        </a>
                     </div>
                 </div>
                 {{/each}}
@@ -122,10 +148,18 @@
                     <a href="mailto:{{contact.email}}">{{contact.email}}</a>
                 </div>
                 <div class="col-md-4 col-sm-12 social-links">
-                    <a href="{{contact.twitter}}"><img class="social-link" src="assets/images/twitter.svg"/></a>
-                    <a href="{{contact.facebook}}"><img class="social-link" src="assets/images/facebook.svg"/></a>
-                    <a href="{{contact.linkedin}}"><img class="social-link" src="assets/images/linkedin.svg"/></a>
-                    <a href="{{contact.github}}"><img class="social-link" src="assets/images/github.svg"/></a>
+                    <a href="{{contact.twitter}}">
+                        <img class="social-link" src="assets/images/twitter.svg" />
+                    </a>
+                    <a href="{{contact.facebook}}">
+                        <img class="social-link" src="assets/images/facebook.svg" />
+                    </a>
+                    <a href="{{contact.linkedin}}">
+                        <img class="social-link" src="assets/images/linkedin.svg" />
+                    </a>
+                    <a href="{{contact.github}}">
+                        <img class="social-link" src="assets/images/github.svg" />
+                    </a>
                 </div>
             </address>
         </div>
@@ -136,4 +170,5 @@
     <script src="assets/js/bootstrap-4.0.0-beta.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>
