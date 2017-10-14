@@ -2,7 +2,7 @@
 layout: layout.html
 
 hero:
-  title: Connect to banks with one API?
+  title: Connect to banks with one API
   text: We enable developers to build the best services on top of banks with ONE API.
   goToLink: http://www.northbricks.io
   goToLinkText: Sign up to start developing
