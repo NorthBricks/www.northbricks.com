@@ -77,18 +77,12 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>{{about.title}}</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-10 ml-auto mr-auto">{{about.text}}</div>
-            </div>
-            {{#if about.pic}}
-            <div class="row">
-                <div class="col-sm-12">
+                    <p>{{about.text}}</p>
+                    {{#if about.pic}}
                     <img class="about-pic" src="{{about.pic}}" />
+                    {{/if}}
                 </div>
             </div>
-            {{/if}}
         </div>
     </section>
 
