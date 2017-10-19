@@ -1,47 +1,4 @@
 $(document).ready(function () {
-
-    var myVideo = document.getElementById("video1");
-
-    function playPause() {
-        if (myVideo.paused)
-            myVideo.play();
-        else
-            myVideo.pause();
-    }
-
-    function makeBig() {
-        myVideo.width = 560;
-    }
-
-    function makeSmall() {
-        myVideo.width = 320;
-    }
-
-    function makeNormal() {
-        myVideo.width = 420;
-    }
-
-    //Mouse click scroll
-    $(document).ready(function () {
-        $(".mouse").click(function () {
-            $('html, body').animate({scrollTop: '+=750px'}, 1200);
-        });
-    });
-
-    //Features appearance
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-
-        //>=, not <=
-        if (scroll >= 500) {
-            $(".feature-icon").addClass("feature-display");
-            $(".feature-head-text").addClass("feature-display");
-            $(".feature-subtext").addClass("feature-display");
-        }
-    });
-
-//smooth scrolling
-
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -50,10 +7,44 @@ $(document).ready(function () {
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, 1000);
+                target.focus();
+                if (target.is(":focus")) {
+                  return false;
+                }
+                target.attr('tabindex', '-1');
+                target.focus();
                 return false;
             }
         }
     });
+    // function filterPath(string) {
+    //     return string.replace(/^\//, '').replace(/(index|default).[a-zA-Z]{3,4}$/, '').replace(/\/$/, '');
+    // }
 
+    // var locationPath = filterPath(location.pathname);
 
-})
+    // $('a[href*="#"]:not([href="#"])').each(function () {
+    //     var thisPath = filterPath(this.pathname) || locationPath;
+    //     var hash = this.hash;
+    //     if ($('#' + hash.replace(/#/, '')).length) {
+    //         console.log(1);
+    //         if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
+    //             var $target = $(hash), target = this.hash;
+    //             if (target) {
+    //                 $(this).click(function (event) {
+    //                     event.preventDefault();
+    //                     $('html, body').animate({ scrollTop: $target.offset().top }, 1000, function () {
+    //                         location.hash = target;
+    //                         $target.focus();
+    //                         if ($target.is(':focus')) { //checking if the target was focused
+    //                             return false;
+    //                         }
+    //                         $target.attr('tabindex', '-1'); //Adding tabindex for elements not focusable
+    //                         $target.focus(); //Setting focus
+    //                     });
+    //                 });
+    //             }
+    //         }
+    //     }
+    // });
+});
