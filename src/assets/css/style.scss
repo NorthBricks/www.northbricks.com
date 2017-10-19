@@ -57,14 +57,15 @@ header {
         font-family: Lato;
         font-weight: 400
     }
-    .hero-goToLink {
+    .hero-link {
         color: #222f36;
         background: #fdc331;
         text-decoration: none;
         padding: 0 70px;
         line-height: 65px;
         border-radius: 3px;
-        display: inline-block;
+        display: block;
+        margin-top: 50px;
     }
 }
 
