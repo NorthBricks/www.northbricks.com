@@ -55,7 +55,7 @@ team:
 contact:
   title: Contact
   email: info@northbricks.com
-  facebook: https://www.facebook.com/NorthBricks
+  facebook: https://www.facebook.com/northbricksplatform
   github: https://www.github.com/Northbricks
   linkedin: https://www.linkedin.com/company-beta/22339599
   twitter: https://twitter.com/northbricks
