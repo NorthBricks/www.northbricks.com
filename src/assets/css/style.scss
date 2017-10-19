@@ -55,17 +55,16 @@ header {
         font-size: 20px;
         color: #fff;
         font-family: Lato;
-        font-weight: 300
+        font-weight: 400
     }
     .hero-goToLink {
-        text-align: center;
-        line-height: 26px;
-        margin-top: 25px;
-        margin-bottom: 60px;
-        font-size: 20px;
-        color: #fff;
-        font-family: Lato;
-        font-weight: 500
+        color: #222f36;
+        background: #fdc331;
+        text-decoration: none;
+        padding: 0 70px;
+        line-height: 65px;
+        border-radius: 3px;
+        display: inline-block;
     }
 }
 
@@ -93,25 +92,32 @@ section {
 
 /* Blog section */
 #blog {
-    background-color: #fff;
+    background-color: #222f36;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+    padding-bottom: 90px;
     position: relative;
+    h2 {
+        color: #fff;
+    }
     .post {
         background-color: #fff;
         margin: 20px 0;
     }
     .post-image {
-        object-fit: contain;
         height: 200px;
         width: 100%;
     }
     .post-title {
+        font-weight: 600;
         padding: 35px 20px 35px 20px;
     }
     .post-entry {
         padding: 0 20px 50px;
         text-align: left;
+    }
+    .post-links {
+        padding: 0 20px 50px;
     }
     .post-link {
         text-decoration:underline;

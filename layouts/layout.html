@@ -95,16 +95,17 @@
                 <div class="col-md-4 ml-auto mr-auto">
                     <article class="post">
                         {{#if this.pic}}
-                        <img class="post-image" src="{{this.pic}}" /> {{/if}}
+                        <img class="post-image" src="{{this.pic}}" />
+                        {{/if}}
                         <h4 class="post-title light">{{this.title}}</h4>
                         <div class="post-entry">{{this.entry}}</div>
-                        {{#if this.linkUrl}}
-                        <div class="post-link">
-                            <a href="{{this.linkUrl}}" target="_blank">{{this.linkText}}</a>
-                        </div>
-                        {{/if}} {{#if this.linkUrl2}}
-                        <div class="post-link">
-                            <a href="{{this.linkUrl2}}" target="_blank">{{this.linkText2}}</a>
+                        {{#if this.links}}
+                        <div class="post-links">
+                            {{#each this.links}}
+                            <div class="post-link">
+                                <a href="{{this.url}}" target="_blank">{{this.text}}</a>
+                            </div>
+                            {{/each}}
                         </div>
                         {{/if}}
                     </article>
