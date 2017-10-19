@@ -9,8 +9,7 @@
     <meta name="Nova theme" content="width=device-width, initial-scale=1">
     <link rel="icon" href="assets/images/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700"
-    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700"/>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
@@ -35,8 +34,7 @@
                         <a class="navbar-brand" href="#">
                             <img class="logo" src="assets/images/logo.png" />
                         </a>
-                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar"
-                            aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
@@ -62,11 +60,12 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h1>{{hero.title}}</h1>
-                    <div class="hero-text">
-                        <i>{{hero.text}}</i>
-                        <a class="hero-link" href="{{hero.goToLink}}" target="_blank">{{hero.goToLinkText}}</a>
-                    </div>
-
+                    <div class="hero-text">{{hero.text}}</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12 webscope ml-auto mr-auto">
+                    <a class="hero-link" href="{{hero.link.url}}" target="_blank">{{hero.link.text}}</a>
                 </div>
             </div>
         </div>

@@ -53,18 +53,18 @@ header {
         margin-top: 25px;
         margin-bottom: 60px;
         font-size: 20px;
+        font-style: italic;
         color: #fff;
-        font-family: Lato;
-        font-weight: 400
     }
     .hero-link {
-        color: #222f36;
         background: #fdc331;
+        color: #222f36;
+        text-align: center;
+        font-size: 20px;
         text-decoration: none;
         line-height: 65px;
         border-radius: 3px;
         display: block;
-        margin-top: 50px;
     }
 }
 
