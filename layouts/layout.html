@@ -82,6 +82,13 @@
             <div class="row">
                 <div class="col-sm-10 ml-auto mr-auto">{{about.text}}</div>
             </div>
+            {{#if about.pic}}
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="about-pic" src="{{about.pic}}" />
+                </div>
+            </div>
+            {{/if}}
         </div>
     </section>
 
