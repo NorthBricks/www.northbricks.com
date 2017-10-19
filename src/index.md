@@ -24,7 +24,7 @@ blog:
         - text: GITHub Bank Starter App
           url: https://github.com/NorthBricks/
         - text: Northbricks API Reference
-        - url: http://www.northbricks.io
+          url: http://www.northbricks.io
     - date: 2017-09-24
       pic: assets/images/blog/psd2.png
       title: Agreements to first bank
