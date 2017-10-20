@@ -7,11 +7,16 @@
         background: url(../images/hero-bg.jpg);
         background-attachment: fixed;
         background-position: right -100px;
+        background-size: cover;
         background-repeat: no-repeat;
         h1 {
             font-size: 80px;
             line-height: 84px
         }
+    }
+    .hero-link {
+        display: inline-block;
+        padding: 0 20px;
     }
 
     #blog .post {
