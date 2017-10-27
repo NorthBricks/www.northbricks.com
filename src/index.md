@@ -12,7 +12,7 @@ hero:
 about:
   title: About
   text: Northbricks will enable third-party, innovators, developers and companies to build the best services on top of banks. End customers will benefit of this innovations and use the best services there are to manage what is so central in everyones life - your money.
-  pic: assets/images/northbricks-platform.png
+  pic: assets/images/northbricks-platform.svg
 
 blog:
   title: Latest news
