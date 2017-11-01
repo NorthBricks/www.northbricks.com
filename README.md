@@ -5,7 +5,7 @@
 [![peerDependency Status](https://img.shields.io/david/peer/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=peer)
 [![devDependency Status](https://img.shields.io/david/dev/Northbricks/www.northbricks.com.svg?style=flat-square)](https://david-dm.org/Northbricks/www.northbricks.com?type=dev)
 
-The Northbricks.com website. Changes in master branch will trigger e new deployment to gh-pages branch which is the website at http://www.northbricks.com.
+The Northbricks.com website. Changes in master branch will trigger new deployment to gh-pages branch, which is the website at http://www.northbricks.com.
 
 ## Build
 
