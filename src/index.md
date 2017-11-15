@@ -41,7 +41,7 @@ team:
   people:
     - name: Jon Wikman
       title: CTO
-      desc: The one that puts it all together. Are you interested of Kubertenes, Microservices and have backgground from Java - and wants to be apart of Northbricks to change the world - contact me.
+      desc: The one that puts it all together. Are you interested of Kubernetes, Microservices and have backgground from Java - and wants to be apart of Northbricks to change the world - contact me.
       pic: assets/images/team/jon-wikman.jpg
       linkedin: https://se.linkedin.com/in/jonwikman
       twitter: https://twitter.com/flaxhaxx
