@@ -1,14 +1,14 @@
-var Metalsmith   = require('metalsmith');
-var markdown     = require('metalsmith-markdown');
-var layouts      = require('metalsmith-layouts');
-var permalinks   = require('metalsmith-permalinks');
+var Metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var layouts = require('metalsmith-layouts');
+var permalinks = require('metalsmith-permalinks');
 var htmlMinifier = require('metalsmith-html-minifier');
-var uglify       = require('metalsmith-uglify');
-var sass         = require('metalsmith-sass');
+var uglify = require('metalsmith-uglify');
+var sass = require('metalsmith-sass');
 
 Metalsmith(__dirname)
   .metadata({
-    title: "Northbricks - Empowering the financial ecosystem"
+    title: "Northbricks - Bank without banking"
   })
   .source('./src')
   .destination('./build')
@@ -22,6 +22,6 @@ Metalsmith(__dirname)
     removeOriginal: true
   }))
   .use(sass())
-  .build(function(err, files) {
+  .build(function (err, files) {
     if (err) { throw err; }
   });
