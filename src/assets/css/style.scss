@@ -130,12 +130,6 @@ section {
         text-decoration:underline;
     }
 
-    .owl-prev, .owl-next {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-    }
-    
     .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
         position: absolute;
         width: 100px;
@@ -145,13 +139,17 @@ section {
         margin-top: -50px;
         outline: none;
     }
-    
     .owl-prev {
         left: -100px;
     }
-    
     .owl-next {
         right: -100px;
+    }
+    .owl-carousel .owl-nav {
+        display: none;
+    }
+    @media (min-height: 1200px) {
+        display: block;
     }
 }
 
