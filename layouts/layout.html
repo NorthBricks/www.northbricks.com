@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700"/>
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
@@ -90,7 +91,7 @@
         <div class="container">
             <h2>{{blog.title}}</h2>
             <p>{{blog.text}}</p>
-            <div class="owl-carousel">
+            <div class="owl-carousel owl-theme">
                 {{#each blog.posts}}
                 <div><!-- class="col-md-4 ml-auto mr-auto"> -->
                     <article class="post">

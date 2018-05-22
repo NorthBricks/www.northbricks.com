@@ -130,14 +130,25 @@ section {
         text-decoration:underline;
     }
 
-    .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        font-size: 80px;
-        top: 50%;
-        margin-top: -50px;
-        outline: none;
+    .owl-carousel {
+        position: relative;
+        .owl-dots {
+            position: absolute;
+            top: -50px;
+            left: 25%;
+            right: 25%;
+        }
+    }
+    .owl-carousel .owl-nav button {
+        &.owl-prev, &.owl-next {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            font-size: 80px;
+            top: 50%;
+            margin-top: -50px;
+            outline: none;
+        }
     }
     .owl-prev {
         left: -100px;
