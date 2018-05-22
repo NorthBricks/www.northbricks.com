@@ -55,7 +55,7 @@ $(document).ready(function () {
         margin: 20,
         responsive: {
             768: {
-                nav: false,
+                nav: true,
                 items: 2
             },
             1200: {
