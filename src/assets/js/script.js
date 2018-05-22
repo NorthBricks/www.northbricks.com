@@ -50,10 +50,14 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         nav: true,
+        dots: false,
         items: 1,
         margin: 20,
         responsive: {
             768: {
+                items: 2
+            },
+            1200: {
                 items: 3
             }
         }
