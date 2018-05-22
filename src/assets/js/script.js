@@ -49,12 +49,13 @@ $(document).ready(function () {
     // });
 
     $('.owl-carousel').owlCarousel({
-        nav: true,
+        nav: false,
         dots: false,
         items: 1,
         margin: 20,
         responsive: {
             768: {
+                nav: true,
                 items: 2
             },
             1200: {
